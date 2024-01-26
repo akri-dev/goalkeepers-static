@@ -9,25 +9,43 @@
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="row">
-                <div class="col-lg-3 logo">
+        <nav class="navbar navbar-expand-lg container justify-content-center">
+            <div class="container-fluid row">
+                <div class="navbar-brand col-lg-3 logo justify-content-between">
                     <a href="index.html">
                         <img src="assets/img/Logo-GoalKeepers.svg" alt="GoalKeepers Logo"><img src="assets/img/Text-Logo-GoalKeepers.svg" alt="GoalKeepers Logo in Text">
                     </a>
+                    <button class="navbar-toggler col-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
                 </div>
-                <div class="col-lg-7 nav-links">
-                    <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">The Team</a></li>
-                            <li><a href="#">Blog</a></li>
+                
+                <div class="collapse navbar-collapse col-lg-9 nav-links justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-4">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">The Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
                     </ul>
-                </div>
-                <div class="col-lg-2 cta-fill"><a href="index.html" class="cta-btn">Contact Us</a></div>
+                    <div class="cta-fill"><a href="index.html" class="cta-btn">Contact Us</a></div>
+                  </div>
+                  
+                </div>  
+              </nav>
             </div>
         </nav>
     </header>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

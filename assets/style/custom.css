@@ -25,14 +25,14 @@ nav {
 }
 
 .logo img:nth-child(1) {
-    width: 3.5em;
+    width: 2.5em;
 }
-
+    
 .logo img:nth-child(2) {
-    margin-left: 12px;
-    width: 10em;
+    margin-left: 8px;
+    width: 8em;
 }
-
+    
 /* navigation links */
 .nav-links {
     padding: 0;
@@ -45,6 +45,33 @@ nav {
     float:right;
 }
 
+@media only screen and (max-width: 991px) {
+    .nav-links ul {
+        float: left;
+        text-align: left;
+
+    }
+
+    .nav-links li {
+        font-size: 2em;
+        margin-left: 10px !important;
+    }
+    
+    .cta-fill {
+        display: none;
+    }
+
+    .logo img:nth-child(1) {
+        width: 2em;
+    }
+        
+    .logo img:nth-child(2) {
+        margin-left: 8px;
+        padding-right: 8px;
+        width: 6em;
+    }
+  }
+  
 .nav-links ul li {
     float:left;
     margin-left: 2em;
@@ -57,6 +84,25 @@ nav {
     text-decoration: none;
 }
 
+.nav-links ul a.active {
+    color: #3098F2;
+}
+
+.nav-links ul div.active {
+    width: 1.4em;
+    height: 3px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #3098F2;
+}
+
+/* .nav-links button.navbar-toggler{
+    
+} */
+.container-fluid {
+    width: 100%;
+}
+
 /* call-to-action button */
 .cta-fill {
     padding: 0;
@@ -64,10 +110,10 @@ nav {
 
 .cta-btn {
     display: inline-block;
-    border: 1px solid #3098F2;
-    border-radius: 6px;
-    padding: 1em;
-    background-color: #F0F8FF;
+    background-color: #3098F2;
+    border-radius: 3.45px;
+    padding: 1em 1.5em;
+    color: #F0F8FF;
     width: 100%;
     text-align: center;
     font-weight: 600;
