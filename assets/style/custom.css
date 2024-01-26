@@ -8,7 +8,7 @@ body {
     outline: none;
     border: none;
     font-family: 'Inter', sans-serif;
-    background-color: #EDF2EB;
+    background-color: #EDF2EB !important;
     color: #252525;
 } 
 
