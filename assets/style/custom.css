@@ -196,27 +196,6 @@ main {
     bottom: 80px; */
 }
 
-@media only screen and (max-width: 1399px) {
-    .learn-more .row:nth-child(1) p {
-        font-size: 1.1rem;
-    }
-
-    .hero-text h1 {
-        font-size: 4.5rem;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    .learn-more .row:nth-child(1) p {
-        font-size: .85rem;
-    }
-
-    .hero-text h1 {
-        font-size: 4rem;
-    }
-}
-
-
 .learn-more a {
     width: 200px;
     display: block;
@@ -243,9 +222,23 @@ main {
 .card-group {
     position: relative;
     top: -50px;
-    height: 25vh;
     width: 300px;
     border-radius: 3.447px;
+    padding: calc(var(--bs-gutter-x));
+    flex-direction: column;
+}
+
+.card-header {
+    font-weight: 700;
+}
+
+.card-body {
+    font-weight: 400;
+}
+
+.card-group img {
+    display: block;
+    border-radius: 3.45px;
 }
 
 .card-group:nth-child(1), .card-group:nth-child(2) {
@@ -263,6 +256,38 @@ main {
 .card-group:nth-child(3) {
     width: 500px;
     background-color: #F2A007;
+}
+
+#responsive-card-image-two {
+    display: none;
+}
+
+@media only screen and (max-width: 1399px) {
+    .learn-more .row:nth-child(1) p {
+        font-size: 1.1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .learn-more .row:nth-child(1) p {
+        font-size: .85rem;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .card-group {
+        margin-bottom: calc(var(--bs-gutter-x));
+    }
+
+    .card-group:nth-child(3) {
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -315,6 +340,32 @@ main {
         width: 150px;
         padding: .8em;
     }
+
+    .card-group {
+        top: 0;
+    }
+
+    .card-section{
+        margin-top: calc(var(--bs-gutter-x));
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #responsive-card-image-one {
+        display: none;
+    }
+
+    #responsive-card-image-two {
+        display: block;
+    }
+
+    .card-group {
+        margin-right: 0px !important;
+    }
+
+    .card-group:nth-child(3) {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -337,3 +388,4 @@ main {
         height: 75vh !important;
     }
 }
+
