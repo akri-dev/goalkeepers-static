@@ -168,14 +168,15 @@ main {
 /* hero section text */
 .hero-text {
     color: #EDF2EB;
-    width: 80%;
+    width: 100%;
     position: relative;
     bottom: 2rem;
 }
 
 .hero-text h1 {
     font-weight: 800;
-    line-height: 5.5rem;
+    line-height: 6.5rem;
+    font-size: 6.5rem;
 }
 
 .learn-more {
@@ -187,14 +188,14 @@ main {
 
 .learn-more .row:nth-child(1) p {
     text-align: right;
-    font-size: 1.3rem;
+    font-size: 1.65rem;
     font-weight: 500;
     line-height: 140%;
-    /* width: 60%; */
-    /* position: relative;
     left: 20%;
     bottom: 80px; */
 }
+
+
 
 .learn-more a {
     width: 200px;
@@ -264,21 +265,22 @@ main {
 
 @media only screen and (max-width: 1399px) {
     .learn-more .row:nth-child(1) p {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .hero-text h1 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 }
 
 @media only screen and (max-width: 1199px) {
     .learn-more .row:nth-child(1) p {
-        font-size: .85rem;
+        font-size: 1.15rem;
     }
 
     .hero-text h1 {
-        font-size: 4rem;
+        line-height: 5.2rem;
+        font-size: 4.7rem;
     }
 
     .card-group {
@@ -321,12 +323,12 @@ main {
     }
 
     .learn-more .row:nth-child(1) p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 4rem;
+        line-height: 4rem;
     }
 
     .learn-more {
@@ -366,17 +368,42 @@ main {
     .card-group:nth-child(3) {
         width: 300px;
     }
-}
 
-@media only screen and (max-width: 450px) {
     .learn-more .row:nth-child(1) p {
-        font-size: .9rem;
+        font-size: .85rem;
     }
 
     .hero-text h1 {
-        font-size: 2.3rem;
-        line-height: 2.3rem;
+        font-size: 3rem;
+        line-height: 3.2rem;
     }
+}
+@media only screen and (max-width: 553px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    .learn-more .row:nth-child(1) p {
+        font-size: .75rem;
+        margin-bottom: .5rem;
+    }
+    
+    .learn-more .wrapper {
+        padding: 0 2.4rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .learn-more .row:nth-child(1) p {
+        font-size: .7rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+
 
     /* .learn-more a {
         font-size: .6rem;
