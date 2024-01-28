@@ -199,16 +199,22 @@ footer {
     line-height: 5.5rem;
 }
 
+.learn-more {
+    position: relative;
+    width: 50%;
+    float: right;
+    bottom: 5rem;
+}
 
 .learn-more .row:nth-child(1) p {
     text-align: right;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 140% ;
-    width: 60%;
-    position: relative;
+    /* width: 60%; */
+    /* position: relative;
     left: 20%;
-    bottom: 80px;
+    bottom: 80px; */
 }
 
 .learn-more a {
@@ -225,9 +231,9 @@ footer {
 }
 
 .learn-more .row:nth-child(2) a {
-    position: relative;
+    /* position: relative;
     left: 20%;
-    bottom: 80px;
+    bottom: 80px; */
 }
 
 /* PLEASE MAKE IT SIMPLE */
